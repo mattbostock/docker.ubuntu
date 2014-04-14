@@ -66,5 +66,8 @@
   apt: pkg=lxc-docker
   notify: "Start Docker"
 
+- name: Install Pip
+  apt: pkg=python-pip
+
 - name: Install docker-py
   pip: name=docker-py
